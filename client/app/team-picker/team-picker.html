@@ -1,0 +1,23 @@
+<div>
+
+  <div class="container">
+    <div ng-show="!vm.user.hasSelectedTeam" class="alert text-center" role="alert">
+      <button ng-click="vm.selectTeam()" ng-disabled="vm.selectingTeam" class="btn btn-success btn-block btn-lg">Select Team</button>
+    </div>
+    <div ng-show="vm.user.hasSelectedTeam" class="alert alert-success text-center" role="alert">
+      <p>You picked {{vm.user.Team.name}}. Good luck!</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="teams-row row text-center" ng-repeat="chunk in vm.teams">
+    <div class="team col-sm-3" ng-repeat="team in chunk">
+      <h3>{{team.name}}</h3>
+      <br/>
+      <img ng-src="/assets/images/flags/{{team.name}}.png"/>
+      <h4 ng-if="team.UserId">{{team.User.name}}</h4>
+    </div>
+  </div>
+
+</div>
