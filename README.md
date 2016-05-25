@@ -1,4 +1,4 @@
-# euro2016-problemfinder-co-uk
+# euro2016-sweepstake
 
 This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 3.7.3.
 
